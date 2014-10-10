@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle campo;
+   
 
     /**
      * Constructor for objects of class Picture
@@ -62,12 +63,14 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveHorizontal(300);
-        sun.slowMoveVertical(125);
      
         
     }
-
+    public void moveSun()
+    {
+        sun.slowMoveVertical(190);
+    }
+    
     /**
      * Change this picture to black/white display
      */
